@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kỹ năng: Ứng xử văn minh trên môi trường số</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-top">
+      <div class="brand">
+        <img src="anh\Quoc-Huy-Viet-Nam.webp" alt="Quốc huy Việt Nam">
+        <div>
+          <h1>Cổng Thông Tin An Toàn Số</h1>
+          <p>Kỹ năng: Ứng xử văn minh trên môi trường số</p>
+        </div>
+      </div>
+      <div>
+        <strong>Văn minh - Trách nhiệm</strong><br>
+        <small>Tôn trọng - Không bắt nạt</small>
+        <p class="user-greeting">
+          Xin chào, <span id="username">người dùng</span>
+        </p>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="moinguy.html">Mối nguy</a></li>
+          <li><a href="kynang.html">Kỹ năng</a></li>
+          <li><a href="tintuc.html">Tin tức</a></li>
+          <li><a href="tainguyen.html">Tài nguyên</a></li>
+          <li><a href="thongtin-nhom.html">Thông tin nhóm</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image: linear-gradient(rgba(3, 25, 46, 0.75), rgba(3, 25, 46, 0.75)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80');">
+    <div class="container hero-content">
+      <span class="badge">Kỹ năng trọng tâm</span>
+      <h2>Ứng xử văn minh trên môi trường số</h2>
+      <p>Giữ thái độ tôn trọng và có trách nhiệm khi giao tiếp trên mạng.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h3>Nguyên tắc ứng xử văn minh</h3>
+        <ul class="list">
+          <li>Không xúc phạm, không miệt thị bạn bè trên mạng.</li>
+          <li>Tôn trọng người khác khi bình luận hoặc chia sẻ.</li>
+          <li>Không lan truyền hình ảnh riêng tư khi chưa được phép.</li>
+          <li>Nhớ rằng phát ngôn trên mạng có thể chịu trách nhiệm pháp luật.</li>
+        </ul>
+        <div class="notice">Ví dụ: Nếu có mâu thuẫn, hãy trao đổi trực tiếp với giáo viên, không đăng bài bôi nhọ.</div>
+      </div>
+      <div>
+        <img src="anh/Ungsuvanminh.png" alt="Ứng xử văn minh">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--light);">
+    <div class="container">
+      <h3>Nguồn tham khảo chính thống</h3>
+      <div class="highlight">
+        <p><a href="https://baovannghe.vn/ung-xu-van-hoa-tren-moi-truong-so-can-nhung-chuan-muc-ro-rang-22157.html" target="_blank" rel="noopener">Ứng xử văn hóa trên môi trường số: Cần những chuẩn mực rõ ràng</a></p>
+        <p><a href="https://sovhtt.hanoi.gov.vn/xay-dung-bo-quy-tac-ung-xu-van-hoa-tren-moi-truong-so/" target="_blank" rel="noopener">Xây dựng Bộ quy tắc ứng xử văn hóa trên môi trường số</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Liên hệ</h4>
+        <p>Trường THPT Thanh Khê</p>
+        <p>Địa chỉ: 232 Kinh Dương Vương</p>
+        <p>Website: <a href="https://www.facebook.com/thanhkhe.edu.vn?locale=vi_VN" target="_blank" rel="noopener">https://www.facebook.com</a></p>
+      </div>
+      <div>
+        <h4>Điều hướng nhanh</h4>
+        <p><a href="kynang.html">Danh mục kỹ năng</a></p>
+        <p><a href="moinguy-batnatmang.html">Mối nguy bắt nạt mạng</a></p>
+      </div>
+      <div>
+        <h4>Thông điệp</h4>
+        <p>Hãy là người dùng mạng văn minh và có trách nhiệm.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const username = sessionStorage.getItem("username");
+    const el = document.getElementById("username");
+    if (el) {
+      el.textContent = username ? username : "người dùng";
+    }
+  });
+</script>
+
+</body>
+</html>

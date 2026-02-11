@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mối nguy - An toàn số cho học sinh THPT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-top">
+      <div class="brand">
+        <img src="anh\Quoc-Huy-Viet-Nam.webp" alt="Quốc huy Việt Nam">
+        <div>
+          <h1>Cổng Thông Tin An Toàn Số</h1>
+          <p>Giáo dục an toàn số cho học sinh THPT</p>
+        </div>
+      </div>
+      <div>
+        <strong>Cảnh báo an toàn thông tin</strong><br>
+        <small>Danh mục các mối nguy phổ biến</small>
+        <p class="user-greeting">
+  Xin chào, <span id="username">người dùng</span>
+</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="moinguy.html">Mối nguy</a></li>
+          <li><a href="kynang.html">Kỹ năng</a></li>
+          <li><a href="tintuc.html">Tin tức</a></li>
+          <li><a href="tainguyen.html">Tài nguyên</a></li>
+          <li><a href="thongtin-nhom.html">Thông tin nhóm</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image: linear-gradient(rgba(3, 25, 46, 0.75), rgba(3, 25, 46, 0.75)), url('https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=1400&q=80');">
+    <div class="container hero-content">
+      <span class="badge">Mối nguy số</span>
+      <h2>Danh mục mối nguy phổ biến</h2>
+      <p>Trang này chỉ liệt kê các mối nguy. Bấm vào từng mục để xem mô tả chi tiết, hình ảnh và nguồn tin chính thống.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3">
+        <article class="card">
+          <img src="anh\luadaotructuyen.jpg" alt="Lừa đảo trực tuyến">
+          <div class="card-body">
+            <h4>Lừa đảo trực tuyến</h4>
+            <p>Tội phạm giả mạo, gửi đường link độc hại hoặc chiếm đoạt tài khoản.</p>
+            <a href="moinguy-luadao.html">Xem chi tiết →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="anh\matdulieucanhan.webp" alt="Mất dữ liệu cá nhân">
+          <div class="card-body">
+            <h4>Mất dữ liệu cá nhân</h4>
+            <p>Rò rỉ dữ liệu do mật khẩu yếu hoặc tải ứng dụng không an toàn.</p>
+            <a href="moinguy-matdulieu.html">Xem chi tiết →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="anh\bat-nat-tren-mang.jpg" alt="Bắt nạt trên mạng">
+          <div class="card-body">
+            <h4>Bắt nạt trên mạng</h4>
+            <p>Hành vi bôi nhọ, chế giễu, lan truyền thông tin gây tổn thương.</p>
+            <a href="moinguy-batnatmang.html">Xem chi tiết →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="anh\thong-tin-sai-su-that-52.png" alt="Tin giả và thông tin độc hại">
+          <div class="card-body">
+            <h4>Tin giả, tin sai sự thật</h4>
+            <p>Thông tin giả mạo, kích động, làm nhiễu loạn nhận thức người đọc.</p>
+            <a href="moinguy-tin-gia.html">Xem chi tiết →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Liên hệ</h4>
+        <p>Trường THPT Thanh Khê</p>
+        <p>Địa chỉ: 232 Kinh Dương Vương</p>
+        <p>Website: <a href="https://www.facebook.com/thanhkhe.edu.vn?locale=vi_VN" target="_blank" rel="noopener">https://www.facebook.com</a></p>
+      </div>
+      <div>
+        <h4>Điều hướng nhanh</h4>
+        <p><a href="index.html">Trang chủ</a></p>
+        <p><a href="kynang.html">Kỹ năng</a></p>
+        <p><a href="tintuc.html">Tin tức</a></p>
+      </div>
+      <div>
+        <h4>Thông điệp</h4>
+        <p>Hãy chủ động phòng tránh mối nguy trên không gian mạng.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const username = sessionStorage.getItem("username");
+    const el = document.getElementById("username");
+    if (el) {
+      el.textContent = username ? username : "người dùng";
+    }
+  });
+</script>
+
+</body>
+</html>

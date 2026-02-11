@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tài nguyên - An toàn số cho học sinh THPT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-top">
+      <div class="brand">
+        <img src="anh\Quoc-Huy-Viet-Nam.webp" alt="Quốc huy Việt Nam">
+        <div>
+          <h1>Cổng Thông Tin An Toàn Số</h1>
+          <p>Kho tài nguyên chính thống</p>
+        </div>
+      </div>
+      <div>
+        <strong>Liên kết chính thống</strong><br>
+        <small>Website Bộ, cổng thông tin, hướng dẫn</small>
+        <p class="user-greeting">
+  Xin chào, <span id="username">người dùng</span>
+</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="moinguy.html">Mối nguy</a></li>
+          <li><a href="kynang.html">Kỹ năng</a></li>
+          <li><a href="tintuc.html">Tin tức</a></li>
+          <li><a href="tainguyen.html">Tài nguyên</a></li>
+          <li><a href="thongtin-nhom.html">Thông tin nhóm</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image: linear-gradient(rgba(3, 25, 46, 0.75), rgba(3, 25, 46, 0.75)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80');">
+    <div class="container hero-content">
+      <span class="badge">Tài nguyên</span>
+      <h2>Các nguồn chính thống về an toàn số</h2>
+      <p>Tổng hợp các cổng thông tin, hướng dẫn và chương trình giáo dục an toàn số.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-3">
+      <article class="card">
+        <img src="anh/Baodientuchinhphu.png" alt="Bộ Thông tin và Truyền thông">
+        <div class="card-body">
+          <h4>Báo Điện tử Chính phủ</h4>
+          <p>Trang web chính thống.</p>
+          <a href="https://baochinhphu.vn/" target="_blank" rel="noopener">Truy cập</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="anh/Thongtinchinhphu.jpg" alt="Cục An toàn thông tin">
+        <div class="card-body">
+          <h4>Thông tin Chính phủ</h4>
+          <p>Kênh youtube chính thức.</p>
+          <a href="https://www.youtube.com/channel/UCYUxsH8xyKAQx1WpCcex5LA/sub_confirmation%3D1" target="_blank" rel="noopener">Truy cập</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="anh/Thongtinchinhphu.jpg" alt="Cổng thông tin an toàn số">
+        <div class="card-body">
+          <h4>Thông tin Chính phủ</h4>
+          <p>Nick facebook chính thức.</p>
+          <a href="https://www.facebook.com/thongtinchinhphu/" target="_blank" rel="noopener">Truy cập</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Liên hệ</h4>
+        <p>Trường THPT Thanh Khê</p>
+        <p>Địa chỉ: 232 Kinh Dương Vương</p>
+        <p>Website: <a href="https://www.facebook.com/thanhkhe.edu.vn?locale=vi_VN" target="_blank" rel="noopener">https://www.facebook.com</a></p>
+      </div>
+      <div>
+        <h4>Điều hướng nhanh</h4>
+        <p><a href="index.html">Trang chủ</a></p>
+        <p><a href="tintuc.html">Tin tức</a></p>
+        <p><a href="kynang.html">Kỹ năng</a></p>
+      </div>
+      <div>
+        <h4>Thông điệp</h4>
+        <p>Ưu tiên sử dụng nguồn thông tin chính thống.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const username = sessionStorage.getItem("username");
+    const el = document.getElementById("username");
+    if (el) {
+      el.textContent = username ? username : "người dùng";
+    }
+  });
+</script>
+
+</body>
+</html>

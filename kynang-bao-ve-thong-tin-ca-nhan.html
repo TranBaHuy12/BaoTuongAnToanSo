@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kỹ năng: Bảo vệ thông tin cá nhân</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-top">
+      <div class="brand">
+        <img src="anh\Quoc-Huy-Viet-Nam.webp" alt="Quốc huy Việt Nam">
+        <div>
+          <h1>Cổng Thông Tin An Toàn Số</h1>
+          <p>Kỹ năng: Bảo vệ thông tin cá nhân</p>
+        </div>
+      </div>
+      <div>
+        <strong>Giữ an toàn dữ liệu</strong><br>
+        <small>Riêng tư - Bảo mật - Kiểm soát</small>
+        <p class="user-greeting">
+          Xin chào, <span id="username">người dùng</span>
+        </p>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="moinguy.html">Mối nguy</a></li>
+          <li><a href="kynang.html">Kỹ năng</a></li>
+          <li><a href="tintuc.html">Tin tức</a></li>
+          <li><a href="tainguyen.html">Tài nguyên</a></li>
+          <li><a href="thongtin-nhom.html">Thông tin nhóm</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image: linear-gradient(rgba(3, 25, 46, 0.75), rgba(3, 25, 46, 0.75)), url('https://images.unsplash.com/photo-1526378722370-64b0d11042b1?auto=format&fit=crop&w=1400&q=80');">
+    <div class="container hero-content">
+      <span class="badge">Kỹ năng trọng tâm</span>
+      <h2>Bảo vệ thông tin cá nhân</h2>
+      <p>Hiểu rõ thông tin cá nhân là gì và cách bảo vệ khỏi bị lạm dụng.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h3>Thông tin cá nhân gồm những gì?</h3>
+        <ul class="list">
+          <li>Họ tên, ngày sinh, số CCCD/CMND, địa chỉ, số điện thoại.</li>
+          <li>Tài khoản học tập, email, mật khẩu, mã OTP.</li>
+          <li>Ảnh chụp thẻ học sinh hoặc giấy tờ cá nhân.</li>
+        </ul>
+        <div class="notice">Ví dụ: Không chụp ảnh CCCD và đăng lên mạng xã hội.</div>
+      </div>
+      <div>
+        <img src="anh/Baovedulieucanhan-i.webp" alt="Bảo vệ thông tin cá nhân">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--light);">
+    <div class="container">
+      <h3>Cài đặt quyền riêng tư mạng xã hội</h3>
+      <p class="intro">Hãy kiểm soát ai được xem bài đăng, ai có thể nhắn tin và hạn chế kết bạn với người lạ.</p>
+      <div class="highlight">
+        <p><a href="https://baomoi.com/bao-ve-du-lieu-ca-nhan-the-nao-khi-phat-trien-cong-dan-so-c54390866.epi" target="_blank" rel="noopener">Bảo vệ dữ liệu cá nhân thế nào khi phát triển công dân số?</a></p>
+        <p><a href="https://dblegal.vn/vi/cap-nhap-phap-ly/bao-ve-du-lieu-ca-nhan/bao-ve-du-lieu-ca-nhan-tai-viet-nam-quy-dinh-va-thuc-tien-1452.html" target="_blank" rel="noopener">Bảo Vệ Dữ Liệu Cá Nhân Tại Việt Nam: Quy Định và Thực Tiễn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Liên hệ</h4>
+        <p>Trường THPT Thanh Khê</p>
+        <p>Địa chỉ: 232 Kinh Dương Vương</p>
+        <p>Website: <a href="https://www.facebook.com/thanhkhe.edu.vn?locale=vi_VN" target="_blank" rel="noopener">https://www.facebook.com</a></p>
+      </div>
+      <div>
+        <h4>Điều hướng nhanh</h4>
+        <p><a href="kynang.html">Danh mục kỹ năng</a></p>
+        <p><a href="moinguy-matdulieu.html">Mối nguy mất dữ liệu</a></p>
+      </div>
+      <div>
+        <h4>Thông điệp</h4>
+        <p>Không công khai thông tin nhạy cảm trên Internet.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const username = sessionStorage.getItem("username");
+    const el = document.getElementById("username");
+    if (el) {
+      el.textContent = username ? username : "người dùng";
+    }
+  });
+</script>
+
+</body>
+</html>

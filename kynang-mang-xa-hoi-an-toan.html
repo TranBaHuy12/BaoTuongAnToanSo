@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kỹ năng: Sử dụng mạng xã hội an toàn</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-top">
+      <div class="brand">
+        <img src="anh\Quoc-Huy-Viet-Nam.webp" alt="Quốc huy Việt Nam">
+        <div>
+          <h1>Cổng Thông Tin An Toàn Số</h1>
+          <p>Kỹ năng: Sử dụng mạng xã hội an toàn</p>
+        </div>
+      </div>
+      <div>
+        <strong>Ứng xử văn minh</strong><br>
+        <small>Tôn trọng - Bảo mật - Trách nhiệm</small>
+        <p class="user-greeting">
+          Xin chào, <span id="username">người dùng</span>
+        </p>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="moinguy.html">Mối nguy</a></li>
+          <li><a href="kynang.html">Kỹ năng</a></li>
+          <li><a href="tintuc.html">Tin tức</a></li>
+          <li><a href="tainguyen.html">Tài nguyên</a></li>
+          <li><a href="thongtin-nhom.html">Thông tin nhóm</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image: linear-gradient(rgba(3, 25, 46, 0.75), rgba(3, 25, 46, 0.75)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80');">
+    <div class="container hero-content">
+      <span class="badge">Kỹ năng trọng tâm</span>
+      <h2>Sử dụng mạng xã hội an toàn</h2>
+      <p>Quản lý bài đăng, kết bạn có chọn lọc và bảo vệ hình ảnh cá nhân.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h3>Nguyên tắc an toàn</h3>
+        <ul class="list">
+          <li>Kiểm soát bài đăng và bình luận trước khi chia sẻ.</li>
+          <li>Không kết bạn người lạ hoặc tài khoản không xác thực.</li>
+          <li>Không chia sẻ thông tin nhạy cảm: địa chỉ, lịch học, số điện thoại.</li>
+          <li>Thiết lập quyền riêng tư trên Facebook/Instagram.</li>
+        </ul>
+        <div class="notice">Ví dụ: Chỉ cho bạn bè xem story, tắt định vị khi đăng ảnh lớp.</div>
+      </div>
+      <div>
+        <img src="anh/Sudungmangxahoiantoan.png" alt="Mạng xã hội an toàn">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--light);">
+    <div class="container">
+      <h3>Nguồn tham khảo chính thống</h3>
+      <div class="highlight">
+        <p><a href="https://mst.gov.vn/mot-so-bien-phap-dam-bao-an-toan-khi-su-dung-mang-xa-hoi-197145667.htm" target="_blank" rel="noopener">Một số biện pháp đảm bảo an toàn khi sử dụng mạng xã hội</a></p>
+        <p><a href="https://vtv.vn/cong-nghe/su-dung-mang-xa-hoi-an-toan-can-cac-bien-phap-xac-thuc-manh-hon-mat-khau-2024060217002508.htm" target="_blank" rel="noopener">Sử dụng mạng xã hội an toàn: Cần các biện pháp xác thực mạnh hơn mật khẩu</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Liên hệ</h4>
+        <p>Trường THPT Thanh Khê</p>
+        <p>Địa chỉ: 232 Kinh Dương Vương</p>
+        <p>Website: <a href="https://www.facebook.com/thanhkhe.edu.vn?locale=vi_VN" target="_blank" rel="noopener">https://www.facebook.com</a></p>
+      </div>
+      <div>
+        <h4>Điều hướng nhanh</h4>
+        <p><a href="kynang.html">Danh mục kỹ năng</a></p>
+        <p><a href="moinguy-batnatmang.html">Mối nguy bắt nạt mạng</a></p>
+      </div>
+      <div>
+        <h4>Thông điệp</h4>
+        <p>Xây dựng dấu ấn số tích cực và có trách nhiệm.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const username = sessionStorage.getItem("username");
+    const el = document.getElementById("username");
+    if (el) {
+      el.textContent = username ? username : "người dùng";
+    }
+  });
+</script>
+
+</body>
+</html>

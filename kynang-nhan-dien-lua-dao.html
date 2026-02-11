@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kỹ năng: Nhận diện lừa đảo trực tuyến</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-top">
+      <div class="brand">
+        <img src="anh\Quoc-Huy-Viet-Nam.webp" alt="Quốc huy Việt Nam">
+        <div>
+          <h1>Cổng Thông Tin An Toàn Số</h1>
+          <p>Kỹ năng: Nhận diện lừa đảo trực tuyến</p>
+        </div>
+      </div>
+      <div>
+        <strong>Bảo vệ bản thân</strong><br>
+        <small>Nhận biết - Xác minh - Từ chối</small>
+        <p class="user-greeting">
+          Xin chào, <span id="username">người dùng</span>
+        </p>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="moinguy.html">Mối nguy</a></li>
+          <li><a href="kynang.html">Kỹ năng</a></li>
+          <li><a href="tintuc.html">Tin tức</a></li>
+          <li><a href="tainguyen.html">Tài nguyên</a></li>
+          <li><a href="thongtin-nhom.html">Thông tin nhóm</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image: linear-gradient(rgba(3, 25, 46, 0.75), rgba(3, 25, 46, 0.75)), url('https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1400&q=80');">
+    <div class="container hero-content">
+      <span class="badge">Kỹ năng trọng tâm</span>
+      <h2>Nhận diện lừa đảo trực tuyến</h2>
+      <p>Trang bị kỹ năng để nhận biết và xử lý các tình huống lừa đảo qua mạng.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h3>Dấu hiệu email/tin nhắn lừa đảo</h3>
+        <ul class="list">
+          <li>Địa chỉ gửi lạ, sai chính tả hoặc không thuộc tổ chức thật.</li>
+          <li>Tiêu đề gây sốc: “Tài khoản bị khóa”, “Nhận quà gấp”.</li>
+          <li>Đính kèm link rút gọn, yêu cầu nhập mật khẩu hoặc OTP.</li>
+        </ul>
+        <div class="notice">
+          <strong>Tình huống học sinh hay gặp:</strong> Tin nhắn “trúng thưởng điện thoại” yêu cầu bấm link và nộp phí vận chuyển.
+        </div>
+      </div>
+      <div>
+        <img src="anh/email-lua-dao.png" alt="Cảnh báo lừa đảo">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--light);">
+    <div class="container">
+      <h3>Lừa đảo giả mạo ngân hàng, trúng thưởng</h3>
+      <p class="intro">Kẻ xấu thường giả danh ngân hàng, ví điện tử, hoặc gửi thông báo trúng thưởng để chiếm đoạt thông tin. Tuyệt đối không cung cấp mã OTP, số thẻ hoặc mật khẩu.</p>
+      <div class="highlight">
+        <p><a href="https://vtv.vn/cong-nghe/canh-giac-truoc-cac-chieu-tro-lua-dao-tren-mang-xa-hoi-20240808130455271.htm" target="_blank" rel="noopener">Cảnh giác trước các chiêu trò lừa đảo trên mạng xã hội</a></p>
+        <p><a href="https://congan.lamdong.gov.vn/canh-bao-thu-doan-chiem-doat-tai-khoan-mang-xa-hoi-de-lua-dao-chiem-doat-tai-san-N584.aspx" target="_blank" rel="noopener">Cảnh báo thủ đoạn chiếm đoạt tài khoản mạng xã hội để lừa đảo chiếm đoạt tài sản</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Liên hệ</h4>
+        <p>Trường THPT Thanh Khê</p>
+        <p>Địa chỉ: 232 Kinh Dương Vương</p>
+        <p>Website: <a href="https://www.facebook.com/thanhkhe.edu.vn?locale=vi_VN" target="_blank" rel="noopener">https://www.facebook.com</a></p>
+      </div>
+      <div>
+        <h4>Điều hướng nhanh</h4>
+        <p><a href="kynang.html">Danh mục kỹ năng</a></p>
+        <p><a href="moinguy-luadao.html">Mối nguy lừa đảo</a></p>
+      </div>
+      <div>
+        <h4>Thông điệp</h4>
+        <p>Nếu nghi ngờ, hãy dừng lại và xác minh.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const username = sessionStorage.getItem("username");
+    const el = document.getElementById("username");
+    if (el) {
+      el.textContent = username ? username : "người dùng";
+    }
+  });
+</script>
+
+</body>
+</html>

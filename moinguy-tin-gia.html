@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mối nguy: Tin giả</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-top">
+      <div class="brand">
+        <img src="anh\Quoc-Huy-Viet-Nam.webp" alt="Quốc huy Việt Nam">
+        <div>
+          <h1>Cổng Thông Tin An Toàn Số</h1>
+          <p>Mối nguy: Tin giả, tin sai sự thật</p>
+        </div>
+      </div>
+      <div>
+        <strong>Chống tin giả</strong><br>
+        <small>Xác minh - Kiểm chứng - Trách nhiệm</small>
+        <p class="user-greeting">
+  Xin chào, <span id="username">người dùng</span>
+</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="moinguy.html">Mối nguy</a></li>
+          <li><a href="kynang.html">Kỹ năng</a></li>
+          <li><a href="tintuc.html">Tin tức</a></li>
+          <li><a href="tainguyen.html">Tài nguyên</a></li>
+          <li><a href="thongtin-nhom.html">Thông tin nhóm</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image: linear-gradient(rgba(3, 25, 46, 0.75), rgba(3, 25, 46, 0.75)), url('https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=1400&q=80');">
+    <div class="container hero-content">
+      <span class="badge">Mối nguy phổ biến</span>
+      <h2>Tin giả và thông tin sai sự thật</h2>
+      <p>Tin giả làm sai lệch nhận thức, gây hoang mang và ảnh hưởng đến cộng đồng học sinh.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h3>Giải thích chi tiết</h3>
+        <p class="intro">Tin giả là các thông tin sai sự thật được lan truyền nhằm gây hiểu lầm, kích động hoặc trục lợi. Học sinh cần kiểm chứng trước khi chia sẻ.</p>
+        <ul class="list">
+          <li>Kiểm tra nguồn gốc, tác giả và thời gian đăng tải.</li>
+          <li>Đối chiếu với các báo chính thống.</li>
+          <li>Không chia sẻ khi chưa xác minh.</li>
+        </ul>
+        <p>Thông tin hướng dẫn tại <a href="https://baochinhphu.vn/" target="_blank" rel="noopener">Báo Điện tử Chính phủ</a> và Cục An toàn thông tin.</p>
+      </div>
+      <div>
+        <img src="anh\thong-tin-sai-su-that-52.png" alt="Kiểm chứng thông tin">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--light);">
+    <div class="container">
+      <h3>Bài báo tham khảo</h3>
+      <div class="highlight">
+        <p><a href="https://baotintuc.vn/van-nan-tin-gia-tren-khong-gian-mang-va-he-luy-nghiem-trong-doi-voi-xa-hoi-n20250728160324427.htm" target="_blank" rel="noopener">Vấn nạn 'tin giả' trên không gian mạng và hệ lụy nghiêm trọng đối với xã hội</a></p>
+        <p><a href="https://thanhnienviet.vn/thanh-nien-voi-trach-nhiem-phong-chong-tin-gia-trong-ky-nguyen-so-209251021235810197.htm" target="_blank" rel="noopener">Thanh niên với trách nhiệm phòng, chống tin giả trong kỷ nguyên số</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Liên hệ</h4>
+        <p>Trường THPT Thanh Khê</p>
+        <p>Địa chỉ: 232 Kinh Dương Vương</p>
+        <p>Website: <a href="https://www.facebook.com/thanhkhe.edu.vn?locale=vi_VN" target="_blank" rel="noopener">https://www.facebook.com</a></p>
+      </div>
+      <div>
+        <h4>Điều hướng nhanh</h4>
+        <p><a href="moinguy.html">Danh mục mối nguy</a></p>
+        <p><a href="kynang-nhan-dien-lua-dao.html">Kỹ năng nhận diện lừa đảo</a></p>
+      </div>
+      <div>
+        <h4>Thông điệp</h4>
+        <p>Kiểm chứng trước khi chia sẻ.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const username = sessionStorage.getItem("username");
+    const el = document.getElementById("username");
+    if (el) {
+      el.textContent = username ? username : "người dùng";
+    }
+  });
+</script>
+
+</body>
+</html>

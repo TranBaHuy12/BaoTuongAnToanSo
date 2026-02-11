@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kỹ năng: Phòng tránh virus và mã độc</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-top">
+      <div class="brand">
+        <img src="anh\Quoc-Huy-Viet-Nam.webp" alt="Quốc huy Việt Nam">
+        <div>
+          <h1>Cổng Thông Tin An Toàn Số</h1>
+          <p>Kỹ năng: Phòng tránh virus và mã độc</p>
+        </div>
+      </div>
+      <div>
+        <strong>Bảo vệ thiết bị</strong><br>
+        <small>Phòng tránh - Quét virus - Cập nhật</small>
+        <p class="user-greeting">
+          Xin chào, <span id="username">người dùng</span>
+        </p>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="moinguy.html">Mối nguy</a></li>
+          <li><a href="kynang.html">Kỹ năng</a></li>
+          <li><a href="tintuc.html">Tin tức</a></li>
+          <li><a href="tainguyen.html">Tài nguyên</a></li>
+          <li><a href="thongtin-nhom.html">Thông tin nhóm</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image: linear-gradient(rgba(3, 25, 46, 0.75), rgba(3, 25, 46, 0.75)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80');">
+    <div class="container hero-content">
+      <span class="badge">Kỹ năng trọng tâm</span>
+      <h2>Phòng tránh virus và mã độc</h2>
+      <p>Bảo vệ máy tính, điện thoại khỏi mã độc và phần mềm gián điệp.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h3>Nguyên tắc phòng tránh</h3>
+        <ul class="list">
+          <li>Không tải phần mềm lậu, game crack hoặc file không rõ nguồn gốc.</li>
+          <li>Không bấm link lạ trong email, tin nhắn.</li>
+          <li>Cài phần mềm diệt virus và cập nhật hệ điều hành thường xuyên.</li>
+          <li>Sao lưu dữ liệu học tập định kỳ.</li>
+        </ul>
+        <div class="notice">Ví dụ: File “đề thi mật” gửi qua email lạ có thể chứa mã độc.</div>
+      </div>
+      <div>
+        <img src="anh/phongtranhvirus.png" alt="Phòng tránh mã độc">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--light);">
+    <div class="container">
+      <h3>Nguồn tham khảo chính thống</h3>
+      <div class="highlight">
+        <p><a href="https://www.bkns.vn/ma-doc-la-gi.html" target="_blank" rel="noopener">Mã độc là gì? Phân loại và phòng tránh mã độc như thế nào</a></p>
+        <p><a href="https://rdsic.edu.vn/blog/blog-3/cach-phong-chong-virus-may-tinh-vi-cb.html" target="_blank" rel="noopener">Cách Phòng Chống Virus Máy Tính: Bảo Vệ Thiết Bị Hiệu Quả</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Liên hệ</h4>
+        <p>Trường THPT Thanh Khê</p>
+        <p>Địa chỉ: 232 Kinh Dương Vương</p>
+        <p>Website: <a href="https://www.facebook.com/thanhkhe.edu.vn?locale=vi_VN" target="_blank" rel="noopener">https://www.facebook.com</a></p>
+      </div>
+      <div>
+        <h4>Điều hướng nhanh</h4>
+        <p><a href="kynang.html">Danh mục kỹ năng</a></p>
+        <p><a href="moinguy-matdulieu.html">Mối nguy mất dữ liệu</a></p>
+      </div>
+      <div>
+        <h4>Thông điệp</h4>
+        <p>Luôn cảnh giác trước file và link không rõ nguồn.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const username = sessionStorage.getItem("username");
+    const el = document.getElementById("username");
+    if (el) {
+      el.textContent = username ? username : "người dùng";
+    }
+  });
+</script>
+
+</body>
+</html>

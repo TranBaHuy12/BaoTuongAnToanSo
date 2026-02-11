@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THÔNG TIN NHÓM THỰC HIỆN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-top">
+      <div class="brand">
+        <img src="anh\Quoc-Huy-Viet-Nam.webp" alt="Quốc huy Việt Nam">
+        <div>
+          <h1>Cổng Thông Tin An Toàn Số</h1>
+          <p>Giáo dục an toàn số cho học sinh THPT</p>
+        </div>
+      </div>
+      <div>
+        <strong>Bộ Thông tin và Truyền thông</strong><br>
+        <small>Định hướng - Hỗ trợ - Đồng hành</small>
+        <p class="user-greeting">
+          Xin chào, <span id="username">người dùng</span>
+        </p>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="moinguy.html">Mối nguy</a></li>
+          <li><a href="kynang.html">Kỹ năng</a></li>
+          <li><a href="tintuc.html">Tin tức</a></li>
+          <li><a href="tainguyen.html">Tài nguyên</a></li>
+          <li><a href="thongtin-nhom.html">Thông tin nhóm</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image: linear-gradient(rgba(3, 25, 46, 0.75), rgba(3, 25, 46, 0.75)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80');">
+    <div class="container hero-content">
+      <span class="badge">Thông tin dự án</span>
+      <h2>THÔNG TIN NHÓM THỰC HIỆN</h2>
+      <p>Trang tổng hợp thông tin lớp, thành viên và bảng phân công nhiệm vụ cho dự án.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h3>Thông tin lớp</h3>
+        <p class="intro"><strong>Lớp:</strong> 12/2</p>
+
+        <h3>Danh sách thành viên</h3>
+        <ul class="list">
+          <li>Nguyễn Phước Minh Thư</li>
+          <li>Nguyễn Ngọc Phương Vy</li>
+          <li>Trần Bá Huy</li>
+          <li>Đoàn Đại Vỹ</li>
+        </ul>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Nhóm học sinh cùng thực hiện dự án">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--light);">
+    <div class="container">
+      <h3>Nhiệm vụ</h3>
+      
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Thành viên</th>
+            <th>Nhiệm vụ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nguyễn Phước Minh Thư</td>
+            <td>Thiết kế trang web - design</td>
+          </tr>
+          <tr>
+            <td>Nguyễn Ngọc Phương Vy</td>
+            <td>Thiết kế trang web - design</td>
+          </tr>
+          <tr>
+            <td>Trần Bá Huy</td>
+            <td>Code</td>
+          </tr>
+          <tr>
+            <td>Đoàn Đại Vỹ</td>
+            <td>Tìm kiếm hình ảnh, link trang web</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Liên hệ</h4>
+        <p>Trường THPT Thanh Khê</p>
+        <p>Địa chỉ: 232 Kinh Dương Vương</p>
+        <p>Website: <a href="https://www.facebook.com/thanhkhe.edu.vn?locale=vi_VN" target="_blank" rel="noopener">https://www.facebook.com</a></p>
+      </div>
+      <div>
+        <h4>Điều hướng nhanh</h4>
+        <p><a href="gioithieu.html">Giới thiệu</a></p>
+        <p><a href="moinguy.html">Mối nguy</a></p>
+        <p><a href="kynang.html">Kỹ năng</a></p>
+        <p><a href="tintuc.html">Tin tức</a></p>
+      </div>
+      <div>
+        <h4>Thông điệp</h4>
+        <p>“Học sinh THPT an toàn số - Tự tin kết nối, chủ động bảo vệ bản thân.”</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const username = sessionStorage.getItem("username");
+    const el = document.getElementById("username");
+    if (el) {
+      el.textContent = username ? username : "người dùng";
+    }
+  });
+</script>
+
+</body>
+</html>

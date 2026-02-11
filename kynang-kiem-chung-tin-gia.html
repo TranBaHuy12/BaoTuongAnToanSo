@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kỹ năng: Kiểm chứng thông tin, tránh tin giả</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-top">
+      <div class="brand">
+        <img src="anh\Quoc-Huy-Viet-Nam.webp" alt="Quốc huy Việt Nam">
+        <div>
+          <h1>Cổng Thông Tin An Toàn Số</h1>
+          <p>Kỹ năng: Kiểm chứng thông tin, tránh tin giả</p>
+        </div>
+      </div>
+      <div>
+        <strong>Kiểm chứng - Trách nhiệm</strong><br>
+        <small>Không chia sẻ tin chưa xác thực</small>
+        <p class="user-greeting">
+          Xin chào, <span id="username">người dùng</span>
+        </p>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="moinguy.html">Mối nguy</a></li>
+          <li><a href="kynang.html">Kỹ năng</a></li>
+          <li><a href="tintuc.html">Tin tức</a></li>
+          <li><a href="tainguyen.html">Tài nguyên</a></li>
+          <li><a href="thongtin-nhom.html">Thông tin nhóm</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image: linear-gradient(rgba(3, 25, 46, 0.75), rgba(3, 25, 46, 0.75)), url('https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=1400&q=80');">
+    <div class="container hero-content">
+      <span class="badge">Kỹ năng trọng tâm</span>
+      <h2>Kiểm chứng thông tin, tránh tin giả</h2>
+      <p>Giúp học sinh phân biệt thông tin thật - giả trên mạng.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h3>Dấu hiệu tin giả</h3>
+        <ul class="list">
+          <li>Tiêu đề giật gân, gây sốc, không nêu nguồn rõ ràng.</li>
+          <li>Ảnh cắt ghép hoặc video không có nguồn chính thống.</li>
+          <li>Yêu cầu chia sẻ gấp để "nhận quà" hoặc "cảnh báo".</li>
+        </ul>
+        <div class="notice">Ví dụ: Tin đồn “đóng cửa trường học” nhưng không có xác nhận từ nhà trường.</div>
+      </div>
+      <div>
+        <img src="anh/Kiemchungthongtin.png" alt="Kiểm chứng thông tin">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--light);">
+    <div class="container">
+      <h3>Cách kiểm chứng</h3>
+      <p class="intro">Luôn đối chiếu với báo chính thống, website của cơ quan nhà nước hoặc nhà trường.</p>
+      <div class="highlight">
+        <p><a href="https://tingia.gov.vn/trang/huong-dan.html" target="_blank" rel="noopener">HƯỚNG DẪN CÁCH NHẬN BIẾT, PHÒNG TRÁNH, ĐỐI PHÓ VỚI TIN GIẢ </a></p>
+        <p><a href="https://quantrimang.com/lang-cong-nghe/cach-phan-biet-tin-that-tin-gia-170445" target="_blank" rel="noopener">Cách phân biệt tin giả tin thật? Làm gì khi thấy tin giả trên không gian mạng</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Liên hệ</h4>
+        <p>Trường THPT Thanh Khê</p>
+        <p>Địa chỉ: 232 Kinh Dương Vương</p>
+        <p>Website: <a href="https://www.facebook.com/thanhkhe.edu.vn?locale=vi_VN" target="_blank" rel="noopener">https://www.facebook.com</a></p>
+      </div>
+      <div>
+        <h4>Điều hướng nhanh</h4>
+        <p><a href="kynang.html">Danh mục kỹ năng</a></p>
+        <p><a href="moinguy-tin-gia.html">Mối nguy tin giả</a></p>
+      </div>
+      <div>
+        <h4>Thông điệp</h4>
+        <p>Kiểm chứng trước khi chia sẻ thông tin.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const username = sessionStorage.getItem("username");
+    const el = document.getElementById("username");
+    if (el) {
+      el.textContent = username ? username : "người dùng";
+    }
+  });
+</script>
+
+</body>
+</html>
